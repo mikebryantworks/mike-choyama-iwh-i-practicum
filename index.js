@@ -35,7 +35,14 @@ title: "Update Custom Object Form | Integrating With HubSpot I Practicum"
 
 // TODO: ROUTE 3 - Create a new app.post route for the custom objects form to create or update your custom object data. Once executed, redirect the user to the homepage.
 
-// * Code for Route 3 goes here
+app.post("/update-cobj", (req, res) => {
+console.log("Form data received:");
+console.log(req.body);
+
+// later this is where the HubSpot API call will go
+res.redirect("/");
+});
+
 
 /** 
 * * This is sample code to give you a reference for how you should structure your calls. 
